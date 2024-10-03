@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="expense-tracker">
+        <header class="expense-tracker__header">
+            <h1>Expense Tracker</h1>
+        </header>
+
+        <div class="expense-tracker__balance">
+            <h2>Balance: <span id="balance">$0.00</span></h2>
+        </div>
+
+        <div class="expense-tracker__summary">
+            <div class="summary__income">
+                <h3>Income</h3>
+                <p id="income">$0.00</p>
+            </div>
+            <div class="summary__expense">
+                <h3>Expense</h3>
+                <p id="expense">$0.00</p>
+            </div>
+        </div>
+
+        <div id="transaction-form" class="expense-tracker__form">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <button id="submitbtn">Add Transaction</button>
+            <button class="deletebtn" id="deletebtn">Clear All</button>
+
+        </div>
+
+        <ul id="transaction-list" class="expense-tracker__transactions">
+        </ul>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
